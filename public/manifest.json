@@ -1,31 +1,19 @@
 {
   "name": "Mastodon Link",
-  "version": "1.2.1",
-  "author": "Alexander Haslam <@indiealexh@tny.social>",
+  "version": "1.3.0",
+  "author": "David Calano <dcalano.dev>",
   "manifest_version": 3,
-  "description": "Extension to make it easy to visit mastodon profiles from your instance",
+  "description": "Easier linking to a remote user's home instance",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content_script.js"]
     }
   ],
-  "permissions": [
-    "storage"
-  ],
-  "options_ui": {
-    "page": "options.html",
-    "open_in_tab": false
-  },
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "mastodon-link@masrly.com"
-    }
   }
 }
